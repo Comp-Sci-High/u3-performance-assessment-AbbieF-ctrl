@@ -45,19 +45,19 @@ app.get("/docs", (request, response) =>{
 })
 
 app.get("/facts/dogs", (request, response) =>{
-    response.status(200).json(petFacts.dogs[getRandomInt(5)])
+    response.status(200).json(petFacts.dogs[getRandomInt(6)])
 })
 
 app.get("/facts/cats", (request, response) =>{
-    response.status(200).json(petFacts.cats[getRandomInt(5)])
+    response.status(200).json(petFacts.cats[getRandomInt(6)])
 })
 
 app.get("/facts/birds", (request, response) =>{
-    response.status(200).json(petFacts.birds[getRandomInt(5)])
+    response.status(200).json(petFacts.birds[getRandomInt(6)])
 })
 
 app.get("/facts/bunnies", (request, response) =>{
-    response.status(200).json(petFacts.bunnies[getRandomInt(5)])
+    response.status(200).json(petFacts.bunnies[getRandomInt(6)])
 })
 
 app.use((req, res, next) =>{
