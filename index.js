@@ -2,12 +2,18 @@ const express = require('express')
 const { request } = require('http')
 const app = express()
 
+//Mathrandom
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+//Facts stuff
 const petFacts = {
     dogs: ["Dogs sweat through their feet",
         "A dog's nose is it's fingerprint",
         "Dogs can detect human illness",
         "Dogs are not colorblind, and can see some colors",
-        "Dogs can be left-pawed or right-pawed"
+        "Dogs can be left-pawed or right-pawed",
     ],
     cats: ["Cats lack the ability to taste sweetness",
         "Cats only meow to humans",
@@ -26,6 +32,12 @@ const petFacts = {
         "Rabbits have panoramic vision",
         "There are 50 kinds of bunnies",
         "Rabbits reproduce very quickly"
+    ],
+    snakes: ["Snakes could be found almost anywhere",
+        "Snakes are able to hear, despite having no external ears",
+        "Some snakes give livebirth while some just lay eggs",
+        "Snakes rely fully on external heat or light sources",
+        "Some snakes live in the sea"
     ]
 }
 
@@ -58,6 +70,10 @@ app.get("/facts/birds", (request, response) =>{
 
 app.get("/facts/bunnies", (request, response) =>{
     response.status(200).json(petFacts.bunnies[getRandomInt(6)])
+})
+
+app.get("/facts/snakes", (request, response) =>{
+    response.status(200).json(petFacts.snakes[getRandomInt(6)])
 })
 
 app.use((req, res, next) =>{
