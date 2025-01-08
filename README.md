@@ -1,3 +1,8 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/HARs_Oy5)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=17638947&assignment_repo_type=AssignmentRepo)
-# node-template
+1. Why did you pick this API topic?
+ Answer: I chose this API topic because it was simple. I don't really know how to do the more complex stuff with App.get and app.use, so I chose the simple topics.
+
+ 2. Describe your API and the available data endpoints
+It's a simple API. It only has a few endpoints, /facts/dogs, /facts/cats, /facts/birds, /facts/bunnies, and /facts/snakes. All have at least 5 facts about the animal.
+
+3. How was your experience building your own API server after using other APIs as a client in Unit 2?
+It was much more easier to use. It also was quicker to actually finish compared to the client in Unit 2.
